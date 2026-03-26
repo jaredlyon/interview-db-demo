@@ -27,11 +27,11 @@ const seedData = [
 ];
 
 async function main() {
-  console.log('seeding');
+  await prisma.teamMember.deleteMany();
 
   for (const member of seedData) {
     await prisma.teamMember.create({ data: member });
-    console.log(`${member.name} — ${member.job_title}`);
+    console.log(`${member.name} ${member.image_url} ${member.job_title} ${member.job_description}`);
   }
 
   console.log('seed done with no issues');
