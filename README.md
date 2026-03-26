@@ -1,6 +1,6 @@
 ### To Run:
 
-you may need to run `npm install`
+`npm install`
 
 `npm run db:setup`
 
