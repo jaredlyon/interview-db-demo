@@ -1,5 +1,7 @@
 ### To Run:
 
+you may need to run `npm install`
+
 `npm run db:setup`
 
 `npm start`
