@@ -4,25 +4,32 @@ const prisma = new PrismaClient();
 
 const seedData = [
   {
-    name: 'jane doe',
-    image_url: 'https://link',
+    name: 'Bryan Miller',
+    image_url: 'sample-link',
     job_title: 'ceo',
     job_description:
-      'jane is responsible for running the company',
+      'Bryan is responsible for running the company',
   },
   {
-    name: 'curran mclaughlin',
-    image_url: 'https:// linkedin',
+    name: 'Curran McLaughlin',
+    image_url: 'sample-link',
     job_title: 'cto',
     job_description:
-      'curran is our best engineer',
+      'Curran is our best engineer',
+  },
+    {
+    name: 'Jared Lyon',
+    image_url: 'sample-link',
+    job_title: 'ml/ai engineer',
+    job_description:
+      'Jared designs ml/ai systems',
   },
   {
-    name: 'jared lyon',
-    image_url: 'https://www.jaredlyon.dev',
-    job_title: 'ml/ai intern',
+    name: 'Lucas Peters',
+    image_url: 'sample-link',
+    job_title: 'software engineer',
     job_description:
-      'jared designs ml./ai systems',
+      'Lucas designs software systems',
   }
 ];
 
