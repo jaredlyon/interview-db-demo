@@ -3,7 +3,7 @@ const { PrismaClient } = require('@prisma/client');
 
 const app = express();
 const prisma = new PrismaClient();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3301;
 
 app.use(express.json());
 
@@ -13,7 +13,7 @@ app.get('/api/team', async (req, res) => {
     res.json(members);
   } catch (err) {
     console.error('failure:', err);
-    res.status(500).json({ error: 'int error' });
+    res.status(500).json({ error: 'internal server error' });
   }
 });
 
